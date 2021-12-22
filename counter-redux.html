@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Counter App</h1>
+    <div id="counter"></div>
+    <button onclick="store.dispatch({type: 'INCREMENT'})">+</button>
+    <button onclick="store.dispatch({type: 'DECREMENT'})">-</button>
+    <button onclick="store.dispatch({type: 'CHANGE_BY', payload: 2})">++</button>
+    <button onclick="store.dispatch({type: 'CHANGE_BY', payload: -2})">--</button>
+    <script src="node_modules/redux/dist/redux.min.js"></script>
+    <script src="counter-redux.js"></script>
+</body>
+</html>
